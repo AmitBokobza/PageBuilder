@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+    <div class="sideBar">
+        <h1>בונה מסך</h1>
+        <br><br>
+        <label for="elementSelector">סוג אלמנט:</label>
+        <br>
+        <select id="elementSelector">
+            <option value="h1">(h1)</option>
+            <option value="h2">(h2)</option>
+            <option value="h3">(h3)</option>
+            <option value="p">(p)</option>
+            <option value="div">(div)</option>
+            <option value="span">(span)</option>
+        </select>
+        <br><br>
+        <label for="colorInput">צבע רקע:</label>
+        <br>
+        <input type="color" value="#FFFFFF" id="colorInput">
+        <br><br>
+        <label for="heightInput">גובה:</label>
+        <br>
+        <input type="number" value="#FFFFFF" id="heightInput">
+        <br><br>
+        <label for="widthInput">רוחב:</label>
+        <br>
+        <input type="number" value="#FFFFFF" id="widthInput">
+        <br><br>
+        <label for="divContent">תוכן:</label>
+        <br>
+        <input type="text" id="divContent">
+        <br><br>
+        <label for="sizeContent">גודל גופן:</label>
+        <br>
+        <input type="number" id="sizeContent">
+        <br><br>
+        <label for="colorContent">צבע גופן:</label>
+        <br>
+        <input type="color" value="#FFFFFF" id="colorContent">
+        <br><br>
+        <label>מסגרת:</label>
+        <br><br>
+        <label class="borderLabel">עובי:</label>
+        <label class="borderLabel">צבע:</label>
+        <label class="borderLabel">סגנון:</label>
+
+        <br>
+        <div class="borderContainer">
+            <input class="borderInput" type="number" id="borderWidth">
+            <input class="borderInput" type="color" id="borderColor">
+            <select id="borderType">
+                <option value="none">None</option>
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="dotted">Dotted</option>
+                <option value="double">Double</option>
+                <option value="groove">Groove</option>
+                <option value="ridge">Ridge</option>
+                <option value="inset">Inset</option>
+                <option value="outset">Outset</option>
+            </select>
+        </div>
+        <br><br>
+        <label for="paddingDiv">מרוווח פנימי:</label>
+        <br>
+        <input type="number" id="paddingDiv">
+        <br><br>
+        <label for="marginDiv">מרווח חיצוני:</label>
+        <br>
+        <input type="number" id="marginDiv">
+        <br><br>
+        <label for="radiusDiv">עיגול פינות:</label>
+        <br>
+        <input type="number" id="radiusDiv">
+        <br><br>
+        <label for="">הצללה:</label>
+        <br><br>
+        <label class="borderLabel">ציר X:</label>
+        <label class="borderLabel">ציר Y:</label>
+        <label class="borderLabel">צבע:</label>
+        <div class="borderContainer">
+            <input class="borderInput" type="text" id="shadowX">
+            <input class="borderInput" type="text" id="shadowY">
+            <input class="borderInput" type="color" id="shadowColor">
+        </div>
+        <br><br>
+        <label for="divInfo">Title:</label>
+        <br>
+        <input type="text" id="divInfo">
+        <br><br>
+        <label for="divId">ID:</label>
+        <br>
+        <input type="text" id="divId">
+        <button onclick="add()">הוסף</button>
+        <button onclick="remove()">מחק לוח</button>
+        <button onclick="saveData()">שמור</button>
+    </div>
+    <div class="main">
+        <div class="content" id="content"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
